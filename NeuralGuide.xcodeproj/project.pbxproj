@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD33C27E1E67955200E146DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33C27D1E67955200E146DF /* AppDelegate.swift */; };
+		CD33C2801E67955200E146DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33C27F1E67955200E146DF /* ViewController.swift */; };
+		CD33C2831E67955200E146DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD33C2811E67955200E146DF /* Main.storyboard */; };
+		CD33C2851E67955200E146DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD33C2841E67955200E146DF /* Assets.xcassets */; };
+		CD33C2881E67955200E146DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD33C2861E67955200E146DF /* LaunchScreen.storyboard */; };
+		CD33C2931E67955200E146DF /* NeuralGuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33C2921E67955200E146DF /* NeuralGuideTests.swift */; };
+		CD33C29E1E67955200E146DF /* NeuralGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33C29D1E67955200E146DF /* NeuralGuideUITests.swift */; };
+		CD33C2B41E68290200E146DF /* ServerComms.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33C2B31E68290200E146DF /* ServerComms.swift */; };
+		CD33C2B61E682FE200E146DF /* CaptionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33C2B51E682FE200E146DF /* CaptionResult.swift */; };
+		CD9FDBDD1E6AFEDA00C675EB /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9FDBDC1E6AFEDA00C675EB /* Errors.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD33C28F1E67955200E146DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD33C2721E67955200E146DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD33C2791E67955200E146DF;
+			remoteInfo = NeuralGuide;
+		};
+		CD33C29A1E67955200E146DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD33C2721E67955200E146DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD33C2791E67955200E146DF;
+			remoteInfo = NeuralGuide;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD33C27A1E67955200E146DF /* NeuralGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeuralGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD33C27D1E67955200E146DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD33C27F1E67955200E146DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD33C2821E67955200E146DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD33C2841E67955200E146DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD33C2871E67955200E146DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD33C2891E67955200E146DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD33C28E1E67955200E146DF /* NeuralGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeuralGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD33C2921E67955200E146DF /* NeuralGuideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralGuideTests.swift; sourceTree = "<group>"; };
+		CD33C2941E67955200E146DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD33C2991E67955200E146DF /* NeuralGuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeuralGuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD33C29D1E67955200E146DF /* NeuralGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralGuideUITests.swift; sourceTree = "<group>"; };
+		CD33C29F1E67955200E146DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD33C2B31E68290200E146DF /* ServerComms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerComms.swift; sourceTree = "<group>"; };
+		CD33C2B51E682FE200E146DF /* CaptionResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptionResult.swift; sourceTree = "<group>"; };
+		CD9FDBDC1E6AFEDA00C675EB /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD33C2771E67955200E146DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD33C28B1E67955200E146DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD33C2961E67955200E146DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD33C2711E67955200E146DF = {
+			isa = PBXGroup;
+			children = (
+				CD33C2B21E679BE700E146DF /* custom */,
+				CD33C27C1E67955200E146DF /* NeuralGuide */,
+				CD33C2911E67955200E146DF /* NeuralGuideTests */,
+				CD33C29C1E67955200E146DF /* NeuralGuideUITests */,
+				CD33C27B1E67955200E146DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD33C27B1E67955200E146DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD33C27A1E67955200E146DF /* NeuralGuide.app */,
+				CD33C28E1E67955200E146DF /* NeuralGuideTests.xctest */,
+				CD33C2991E67955200E146DF /* NeuralGuideUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD33C27C1E67955200E146DF /* NeuralGuide */ = {
+			isa = PBXGroup;
+			children = (
+				CD33C27D1E67955200E146DF /* AppDelegate.swift */,
+				CD33C27F1E67955200E146DF /* ViewController.swift */,
+				CD33C2811E67955200E146DF /* Main.storyboard */,
+				CD33C2841E67955200E146DF /* Assets.xcassets */,
+				CD33C2861E67955200E146DF /* LaunchScreen.storyboard */,
+				CD33C2891E67955200E146DF /* Info.plist */,
+				CD33C2B31E68290200E146DF /* ServerComms.swift */,
+				CD33C2B51E682FE200E146DF /* CaptionResult.swift */,
+				CD9FDBDC1E6AFEDA00C675EB /* Errors.swift */,
+			);
+			path = NeuralGuide;
+			sourceTree = "<group>";
+		};
+		CD33C2911E67955200E146DF /* NeuralGuideTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD33C2921E67955200E146DF /* NeuralGuideTests.swift */,
+				CD33C2941E67955200E146DF /* Info.plist */,
+			);
+			path = NeuralGuideTests;
+			sourceTree = "<group>";
+		};
+		CD33C29C1E67955200E146DF /* NeuralGuideUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD33C29D1E67955200E146DF /* NeuralGuideUITests.swift */,
+				CD33C29F1E67955200E146DF /* Info.plist */,
+			);
+			path = NeuralGuideUITests;
+			sourceTree = "<group>";
+		};
+		CD33C2B21E679BE700E146DF /* custom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = custom;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD33C2791E67955200E146DF /* NeuralGuide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD33C2A21E67955200E146DF /* Build configuration list for PBXNativeTarget "NeuralGuide" */;
+			buildPhases = (
+				CD33C2761E67955200E146DF /* Sources */,
+				CD33C2771E67955200E146DF /* Frameworks */,
+				CD33C2781E67955200E146DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeuralGuide;
+			productName = NeuralGuide;
+			productReference = CD33C27A1E67955200E146DF /* NeuralGuide.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD33C28D1E67955200E146DF /* NeuralGuideTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD33C2A51E67955200E146DF /* Build configuration list for PBXNativeTarget "NeuralGuideTests" */;
+			buildPhases = (
+				CD33C28A1E67955200E146DF /* Sources */,
+				CD33C28B1E67955200E146DF /* Frameworks */,
+				CD33C28C1E67955200E146DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD33C2901E67955200E146DF /* PBXTargetDependency */,
+			);
+			name = NeuralGuideTests;
+			productName = NeuralGuideTests;
+			productReference = CD33C28E1E67955200E146DF /* NeuralGuideTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD33C2981E67955200E146DF /* NeuralGuideUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD33C2A81E67955200E146DF /* Build configuration list for PBXNativeTarget "NeuralGuideUITests" */;
+			buildPhases = (
+				CD33C2951E67955200E146DF /* Sources */,
+				CD33C2961E67955200E146DF /* Frameworks */,
+				CD33C2971E67955200E146DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD33C29B1E67955200E146DF /* PBXTargetDependency */,
+			);
+			name = NeuralGuideUITests;
+			productName = NeuralGuideUITests;
+			productReference = CD33C2991E67955200E146DF /* NeuralGuideUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD33C2721E67955200E146DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Team Lima";
+				TargetAttributes = {
+					CD33C2791E67955200E146DF = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					CD33C28D1E67955200E146DF = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CD33C2791E67955200E146DF;
+					};
+					CD33C2981E67955200E146DF = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CD33C2791E67955200E146DF;
+					};
+				};
+			};
+			buildConfigurationList = CD33C2751E67955200E146DF /* Build configuration list for PBXProject "NeuralGuide" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD33C2711E67955200E146DF;
+			productRefGroup = CD33C27B1E67955200E146DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD33C2791E67955200E146DF /* NeuralGuide */,
+				CD33C28D1E67955200E146DF /* NeuralGuideTests */,
+				CD33C2981E67955200E146DF /* NeuralGuideUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD33C2781E67955200E146DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD33C2881E67955200E146DF /* LaunchScreen.storyboard in Resources */,
+				CD33C2851E67955200E146DF /* Assets.xcassets in Resources */,
+				CD33C2831E67955200E146DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD33C28C1E67955200E146DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD33C2971E67955200E146DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD33C2761E67955200E146DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD33C2801E67955200E146DF /* ViewController.swift in Sources */,
+				CD9FDBDD1E6AFEDA00C675EB /* Errors.swift in Sources */,
+				CD33C2B41E68290200E146DF /* ServerComms.swift in Sources */,
+				CD33C2B61E682FE200E146DF /* CaptionResult.swift in Sources */,
+				CD33C27E1E67955200E146DF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD33C28A1E67955200E146DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD33C2931E67955200E146DF /* NeuralGuideTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD33C2951E67955200E146DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD33C29E1E67955200E146DF /* NeuralGuideUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD33C2901E67955200E146DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD33C2791E67955200E146DF /* NeuralGuide */;
+			targetProxy = CD33C28F1E67955200E146DF /* PBXContainerItemProxy */;
+		};
+		CD33C29B1E67955200E146DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD33C2791E67955200E146DF /* NeuralGuide */;
+			targetProxy = CD33C29A1E67955200E146DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD33C2811E67955200E146DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD33C2821E67955200E146DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD33C2861E67955200E146DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD33C2871E67955200E146DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD33C2A01E67955200E146DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD33C2A11E67955200E146DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD33C2A31E67955200E146DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NeuralGuide/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "team-lima.NeuralGuide";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CD33C2A41E67955200E146DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NeuralGuide/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "team-lima.NeuralGuide";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CD33C2A61E67955200E146DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NeuralGuideTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "team-lima.NeuralGuideTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeuralGuide.app/NeuralGuide";
+			};
+			name = Debug;
+		};
+		CD33C2A71E67955200E146DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NeuralGuideTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "team-lima.NeuralGuideTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeuralGuide.app/NeuralGuide";
+			};
+			name = Release;
+		};
+		CD33C2A91E67955200E146DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = NeuralGuideUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "team-lima.NeuralGuideUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = NeuralGuide;
+			};
+			name = Debug;
+		};
+		CD33C2AA1E67955200E146DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = NeuralGuideUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "team-lima.NeuralGuideUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = NeuralGuide;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD33C2751E67955200E146DF /* Build configuration list for PBXProject "NeuralGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD33C2A01E67955200E146DF /* Debug */,
+				CD33C2A11E67955200E146DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD33C2A21E67955200E146DF /* Build configuration list for PBXNativeTarget "NeuralGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD33C2A31E67955200E146DF /* Debug */,
+				CD33C2A41E67955200E146DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD33C2A51E67955200E146DF /* Build configuration list for PBXNativeTarget "NeuralGuideTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD33C2A61E67955200E146DF /* Debug */,
+				CD33C2A71E67955200E146DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD33C2A81E67955200E146DF /* Build configuration list for PBXNativeTarget "NeuralGuideUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD33C2A91E67955200E146DF /* Debug */,
+				CD33C2AA1E67955200E146DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD33C2721E67955200E146DF /* Project object */;
+}
