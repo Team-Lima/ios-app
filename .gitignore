@@ -6,3 +6,5 @@ NeuralGuide.xcodeproj
 NeuralGuideTests/*.plist
 NeuralGuideUITests/*.plist
 custom
+NerualGuide/Base.lproj
+NeuralGuide/Info.plist
