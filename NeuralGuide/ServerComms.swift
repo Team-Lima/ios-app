@@ -37,20 +37,29 @@ class ServerHandler {
         @returns :      The image result as a CaptionResult object
     */
     
-    private func new_request(img: String) throws ->CaptionResult {
+    private func new_request(img: String) -> (CaptionResult, HTTPError) {
         
         // sending the JSON
-        try self.send_json(data: img)
+        var dict: NSDictionary
+        var err: HTTPError
+        (dict, err) = self.send_json(data: img)
         
         // checking for errors
         
-        let captionResult = CaptionResult()
+        if err != HTTPError.NoError{
+            return (EmptyResult(), err)
+        } else {
         
-        return captionResult
+            let captionResult = CaptionResult()
+            
+            if captionResult.correctFormat(){
+                err = 
+            }
+        }
         
     }
     
-    private func send_json(data:String) throws {
+    private func send_json(data:String) -> (NSDictionary, HTTPError){
         
         let json_dict: [String: String] = [
             "data": data
@@ -59,7 +68,7 @@ class ServerHandler {
         var reqResult: NSDictionary
         var reqError: HTTPError
         reqError = HTTPError.NoError
-        
+    
         do {
             let jsonData = try? JSONSerialization.data(withJSONObject:  json_dict,
                                                        options: .prettyPrinted)
@@ -82,7 +91,7 @@ class ServerHandler {
                                                                 options: [])
                     if let jsonResult = result as? NSDictionary {
                         reqResult = jsonResult
-                        self.reqError = false
+                        reqError = HTTPError.NoError
                     } else {
                         print("ERROR: JSON not in the required format")
                         reqError = HTTPError.WrongJSONFormat
@@ -90,7 +99,7 @@ class ServerHandler {
                     }
                 } catch {
                     print("ERROR while deserialising the JSON result")
-                    self.reqError = true
+                    reqError = HTTPError.NotaJSON
                     return
                 }
                 
@@ -98,11 +107,10 @@ class ServerHandler {
             
         } catch {
             print("ERROR while making HTTP request")
-            self.reqError = true
-            throw HTTPError.ConnectionError
+            reqError = HTTPError.ConnectionError
         }
         
-        if
+        return (reqResult, reqError)
         
     }
     
