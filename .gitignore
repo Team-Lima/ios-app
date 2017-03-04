@@ -3,3 +3,6 @@ NeuralGuide/*.storyboard
 NeuralGuide/*.xcassets
 NeruralGuide/*.plist
 custom
+*.storyboard
+*.xcassets
+*.plist
