@@ -2,7 +2,7 @@ Products
 NeuralGuide/*.storyboard
 NeuralGuide/*.xcassets
 NeruralGuide/*.plist
+NeuralGuide.xcodeproj
+NeuralGuideTests/*.plist
+NeuralGuideUITests/*.plist
 custom
-*.storyboard
-*.xcassets
-*.plist
