@@ -9,8 +9,8 @@
 import Foundation
 public class EmptyResult: CaptionResult {
     
-    override public init(){
-        
+    public override init(){
+       super.init()
     }
     
 }

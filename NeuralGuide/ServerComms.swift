@@ -40,7 +40,7 @@ class ServerHandler {
     private func new_request(img: String) -> (CaptionResult, HTTPError) {
         
         // sending the JSON
-        var dict: NSDictionary
+        var dict: [String:String]
         var err: HTTPError
         (dict, err) = self.send_json(data: img)
         
@@ -50,24 +50,29 @@ class ServerHandler {
             return (EmptyResult(), err)
         } else {
         
-            let captionResult = CaptionResult()
+            let captionResult = CaptionResult(raw: dict)
             
-            if captionResult.correctFormat(){
-                err = 
+            if captionResult.isCorrectFormat(){
+                err = HTTPError.NoError
+            } else {
+                err = HTTPError.WrongJSONFormat
             }
+            
+            return (captionResult, err)
         }
         
     }
     
-    private func send_json(data:String) -> (NSDictionary, HTTPError){
+    private func send_json(data:String) -> ([String:String], HTTPError){
         
         let json_dict: [String: String] = [
             "data": data
         ]
         
-        var reqResult: NSDictionary
+        var reqResult: [String:String]
         var reqError: HTTPError
         reqError = HTTPError.NoError
+        reqResult = [:]
     
         do {
             let jsonData = try? JSONSerialization.data(withJSONObject:  json_dict,
@@ -89,7 +94,7 @@ class ServerHandler {
                 do {
                     let result = try? JSONSerialization.jsonObject(with: data,
                                                                 options: [])
-                    if let jsonResult = result as? NSDictionary {
+                    if let jsonResult = result as? [String:String]{
                         reqResult = jsonResult
                         reqError = HTTPError.NoError
                     } else {

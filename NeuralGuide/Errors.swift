@@ -16,5 +16,5 @@ enum HTTPError: Error {
     case NotaJSON
     case ServerError
     case NoError
-
 }
+
